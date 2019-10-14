@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		696FA2BB23547DC90077E035 /* firstRowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696FA2BA23547DC90077E035 /* firstRowVC.swift */; };
+		697445AC2354A13D00575B54 /* interface2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697445AB2354A13D00575B54 /* interface2VC.swift */; };
+		697445AE2354A42B00575B54 /* interface3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697445AD2354A42B00575B54 /* interface3VC.swift */; };
 		69C24986234B6A8D00B35976 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C24985234B6A8D00B35976 /* AppDelegate.swift */; };
 		69C24988234B6A8D00B35976 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C24987234B6A8D00B35976 /* ViewController.swift */; };
 		69C2498B234B6A8E00B35976 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69C24989234B6A8E00B35976 /* Main.storyboard */; };
@@ -65,6 +68,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		696FA2BA23547DC90077E035 /* firstRowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstRowVC.swift; sourceTree = "<group>"; };
+		697445AB2354A13D00575B54 /* interface2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = interface2VC.swift; sourceTree = "<group>"; };
+		697445AD2354A42B00575B54 /* interface3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = interface3VC.swift; sourceTree = "<group>"; };
 		69C24982234B6A8D00B35976 /* watchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69C24985234B6A8D00B35976 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69C24987234B6A8D00B35976 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +161,9 @@
 				69C249AE234B6A8F00B35976 /* Assets.xcassets */,
 				69C249B0234B6A8F00B35976 /* Info.plist */,
 				69C249B1234B6A8F00B35976 /* PushNotificationPayload.apns */,
+				696FA2BA23547DC90077E035 /* firstRowVC.swift */,
+				697445AB2354A13D00575B54 /* interface2VC.swift */,
+				697445AD2354A42B00575B54 /* interface3VC.swift */,
 			);
 			path = "watchDemo WatchKit Extension";
 			sourceTree = "<group>";
@@ -303,6 +312,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				697445AC2354A13D00575B54 /* interface2VC.swift in Sources */,
+				696FA2BB23547DC90077E035 /* firstRowVC.swift in Sources */,
+				697445AE2354A42B00575B54 /* interface3VC.swift in Sources */,
 				69C249AD234B6A8F00B35976 /* NotificationController.swift in Sources */,
 				69C249AB234B6A8E00B35976 /* ExtensionDelegate.swift in Sources */,
 				69C249A9234B6A8E00B35976 /* InterfaceController.swift in Sources */,

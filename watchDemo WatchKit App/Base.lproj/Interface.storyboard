@@ -1,39 +1,208 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13196" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13051"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
-            </objects>
-            <point key="canvasLocation" x="220" y="345"/>
-        </scene>
-        <!--Static Notification Interface Controller-->
-        <scene sceneID="AEw-b0-oYE">
-            <objects>
-                <notificationController id="YCC-NB-fut">
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="watchDemo_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                        <group width="1" alignment="left" id="zYR-9c-iXf">
+                            <items>
+                                <button width="33" height="31" alignment="left" title="AC" id="ltQ-T7-U3X">
+                                    <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="acBtnAction" destination="AgC-eL-Hgc" id="rHy-sX-H0S"/>
+                                    </connections>
+                                </button>
+                                <label width="92" height="39" alignment="left" text="0" textAlignment="right" id="u31-1f-lE9"/>
+                            </items>
+                        </group>
+                        <group height="119" alignment="center" verticalAlignment="center" contentMode="scaleAspectFill" layout="vertical" id="fD7-mh-BqI">
+                            <items>
+                                <group width="1" height="26" alignment="left" contentMode="center" spacing="8" id="e5M-Jp-bSb">
+                                    <items>
+                                        <button width="32" height="1" alignment="left" title="7" id="gR4-fo-1kL">
+                                            <connections>
+                                                <action selector="sevenBtnAction" destination="AgC-eL-Hgc" id="n6y-1L-nEU"/>
+                                            </connections>
+                                        </button>
+                                        <button width="32" height="1" alignment="left" title="8" id="c79-1f-c15">
+                                            <connections>
+                                                <action selector="eightBtnAction" destination="AgC-eL-Hgc" id="jOy-1J-MEx"/>
+                                            </connections>
+                                        </button>
+                                        <button width="32" height="1" alignment="left" title="9" id="bro-ZE-G9H">
+                                            <connections>
+                                                <action selector="nineBtnAction" destination="AgC-eL-Hgc" id="bM9-fd-IFl"/>
+                                            </connections>
+                                        </button>
+                                        <button width="32" height="1" alignment="left" title="+" id="eMH-5h-Ob1">
+                                            <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="addBtnAction" destination="AgC-eL-Hgc" id="kAk-xJ-ZWp"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                    <variation key="device=watch38mm" spacing="0.0"/>
+                                </group>
+                                <group width="1" height="26" alignment="left" spacing="8" id="okA-pf-Wop">
+                                    <items>
+                                        <button width="32" height="1" alignment="left" title="4" id="Xut-tW-qqN">
+                                            <connections>
+                                                <action selector="fourBtnAction" destination="AgC-eL-Hgc" id="LoV-8F-0MP"/>
+                                            </connections>
+                                        </button>
+                                        <button width="32" height="1" alignment="left" title="5" id="xyY-VZ-8E1">
+                                            <connections>
+                                                <action selector="fiveBtnAction" destination="AgC-eL-Hgc" id="fhl-uD-UG8"/>
+                                            </connections>
+                                        </button>
+                                        <button width="32" height="1" alignment="left" title="6" id="mlp-PP-5pj">
+                                            <connections>
+                                                <action selector="sixBtnAction" destination="AgC-eL-Hgc" id="EHq-yr-UY6"/>
+                                            </connections>
+                                        </button>
+                                        <button width="32" height="1" alignment="left" title="-" id="eU4-84-HdT">
+                                            <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="subtractBtnAction" destination="AgC-eL-Hgc" id="xaZ-4z-hDB"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                    <variation key="device=watch38mm" spacing="0.0"/>
+                                </group>
+                                <group width="1" height="26" alignment="left" spacing="8" id="Clu-WJ-eEp">
+                                    <items>
+                                        <button width="32" height="1" alignment="left" title="1" id="prM-fC-WZz">
+                                            <connections>
+                                                <action selector="oneBtnAction" destination="AgC-eL-Hgc" id="cvz-nK-JzV"/>
+                                            </connections>
+                                        </button>
+                                        <button width="32" height="1" alignment="left" title="2" id="CKK-eD-HfA">
+                                            <connections>
+                                                <action selector="twoBtnAction" destination="AgC-eL-Hgc" id="cGu-ph-op6"/>
+                                            </connections>
+                                        </button>
+                                        <button width="32" height="1" alignment="left" title="3" id="4WX-3n-7gc">
+                                            <connections>
+                                                <action selector="threeBtnAction" destination="AgC-eL-Hgc" id="EQP-iq-QwB"/>
+                                            </connections>
+                                        </button>
+                                        <button width="32" height="1" alignment="left" title="*" id="HnZ-9U-faW">
+                                            <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="multiplyBtnAction" destination="AgC-eL-Hgc" id="9gh-bq-LFn"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                    <variation key="device=watch38mm" spacing="0.0"/>
+                                </group>
+                                <group width="1" height="26" alignment="left" spacing="8" id="he7-Q2-380">
+                                    <items>
+                                        <button width="32" height="1" alignment="left" title="\" id="Vbj-c6-kat">
+                                            <connections>
+                                                <action selector="divideBtnAction" destination="AgC-eL-Hgc" id="nho-nk-x7o"/>
+                                            </connections>
+                                        </button>
+                                        <button width="32" height="1" alignment="left" title="0" id="wrv-h3-MQS">
+                                            <connections>
+                                                <action selector="zeroBtnAction" destination="AgC-eL-Hgc" id="Prg-cj-Abp"/>
+                                            </connections>
+                                        </button>
+                                        <button width="26" height="1" alignment="left" id="qfy-C0-hwS">
+                                            <color key="backgroundColor" red="0.31764705879999999" green="0.59607843140000005" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <segue destination="tfM-SZ-Nja" kind="push" id="8EH-GU-zzV"/>
+                                            </connections>
+                                        </button>
+                                        <button width="37" height="1" alignment="left" title="=" id="JXA-7y-dS6">
+                                            <color key="backgroundColor" red="0.31764705879999999" green="0.59607843140000005" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="equalBtnAction" destination="AgC-eL-Hgc" id="9yb-VG-b5M"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                    <variation key="device=watch38mm" spacing="0.0"/>
+                                </group>
+                            </items>
+                        </group>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
                     <connections>
-                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
-                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <outlet property="lblResult" destination="u31-1f-lE9" id="RlY-bS-NHp"/>
                     </connections>
-                </notificationController>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="219" y="344"/>
         </scene>
-        <!--Notification Controller-->
-        <scene sceneID="ZPc-GJ-vnh">
+        <!--Interface Controller-->
+        <scene sceneID="hT1-lh-Bm1">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="tfM-SZ-Nja">
+                    <items>
+                        <button width="1" alignment="left" title="Table" id="g7o-v3-gYj">
+                            <connections>
+                                <segue destination="J1F-b5-mEG" kind="push" id="WV8-rc-OaH"/>
+                            </connections>
+                        </button>
+                        <switch width="1" alignment="left" value="YES" title="Switch" id="qbR-m1-8uU"/>
+                        <label width="131" alignment="left" text="Label" id="38K-Io-6w3"/>
+                        <map height="100" alignment="left" id="aov-WK-DWq"/>
+                    </items>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="534" y="338"/>
+        </scene>
+        <!--Interface2VC-->
+        <scene sceneID="EGc-8j-BLM">
+            <objects>
+                <controller id="J1F-b5-mEG" customClass="interface2VC" customModule="watchDemo_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="aUL-Oe-Dal">
+                            <items>
+                                <tableRow identifier="firstRow" id="t5U-bF-bUj" customClass="firstRowVC" customModule="watchDemo_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="lD0-Fw-OPX">
+                                        <items>
+                                            <label alignment="left" text="Label" id="Qy7-i9-D2p"/>
+                                        </items>
+                                        <connections>
+                                            <segue destination="h9f-VL-d1v" kind="push" id="AbG-dJ-mmI"/>
+                                        </connections>
+                                    </group>
+                                    <connections>
+                                        <outlet property="lblProp" destination="Qy7-i9-D2p" id="nNB-3J-nb1"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tblViewProp" destination="aUL-Oe-Dal" id="yVg-Xt-zIf"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="805" y="322"/>
+        </scene>
+        <!--Interface3VC-->
+        <scene sceneID="dYp-WY-sQ0">
+            <objects>
+                <controller id="h9f-VL-d1v" customClass="interface3VC" customModule="watchDemo_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="Label" id="nIk-kc-Etw"/>
+                    </items>
+                    <connections>
+                        <outlet property="lblProp" destination="nIk-kc-Etw" id="n7d-Wc-Lda"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1136" y="310"/>
         </scene>
     </scenes>
 </document>

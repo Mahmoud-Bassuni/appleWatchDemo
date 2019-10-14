@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Copy of watchDemo WatchKit App_notification.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>watchDemo WatchKit App (Notification).xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,12 +17,30 @@
 		<key>watchDemo WatchKit App.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>watchDemo WatchKit App_notification.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
 		<key>watchDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>69C24981234B6A8D00B35976</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>69C24993234B6A8E00B35976</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
